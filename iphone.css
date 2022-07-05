@@ -1,0 +1,319 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+html{
+    font: 10px;
+}
+header{
+    position: relative;
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+}
+header nav{
+width: 100%;
+height: 10%;
+padding: 2.6rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+nav div:first-child{
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+nav div:first-child i{
+    margin: .4rem 0;
+}
+.fa-gear:hover{
+    transform: rotate(90deg);
+}
+nav div:last-child{
+    font-size: 3.5rem;
+    color: white;
+}
+header > div:nth-child(2){
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    word-wrap: break-word;
+}    
+header > div:nth-child(2) div:nth-child(1) span{
+font-size: 3.5rem;
+font-weight: bold;
+color: rgb(241, 235, 235);
+}
+header > div:nth-child(2) div:nth-child(1) p{
+    font-size: 1.6rem;
+    margin: 1rem 0 0 1.5rem;
+    color: rgb(181, 187, 197);
+}
+header > div:nth-child(2) div:nth-child(2) img{
+    width: 32rem;
+    transition: all .6s ease;
+}
+header > div:nth-child(2) div:nth-child(2) img:hover{
+    transform: scale(.95);
+}
+header > div:nth-child(3){
+    width: 100%;
+    height: 5%;
+}
+header > div:nth-child(3) a i{
+font-size: 1.2rem;
+color: white;
+padding-left: 1rem;
+}
+i:hover{
+    cursor: pointer;
+    color: rgb(219, 217, 211);
+}
+.boxbar{
+    position: absolute;
+    top: 2%;
+    left: 4.5rem;
+    width: 15rem;
+    height: 0rem;
+    border-radius: 1rem;
+    border: .2rem solid rgb(104, 66, 66);
+    background-color: rgb(255, 251, 252);
+    font-size: 0rem;
+    opacity: 0;
+    transition: all .9s ease-in-out;
+}
+.boxbar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2b4651;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.active a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2b4651;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: .2rem 0;
+}
+.active a:hover{
+text-decoration: underline;
+color: #817f7e;
+}
+.active{
+    position: absolute;
+    top: 2%;
+    left: 4.5rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    border: .2rem solid rgb(104, 66, 66);
+    background-color: rgba(255, 251, 252 ,.9);
+    font-size: 1.5rem;
+    opacity: 1;
+}
+.colors{
+    position: absolute;
+    top: 7%;
+    left: 4.1rem;
+    background-color: rgb(76, 78, 76);
+    width: 10rem;
+    height: 0rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    opacity: 0;
+    transition: all .9s ease;
+}
+.colors span{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: .2rem;
+}
+.colors div button{
+    width: 0rem;
+    height: 0rem;
+    border-radius: 50%;
+    border: white solid .1rem;
+    cursor: pointer;
+}
+.colors div .color1{
+    background-color: #91a5bd;
+}
+.colors div .color2{
+    background-color: #484643;
+}
+.colors div .color3{
+    background-color: #2b4651;
+}
+.colors div .color4{
+    background-color: #f2f3ed;
+}
+.colorsactive div button{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: white solid .1rem;
+    cursor: pointer;
+}
+.colorsactive div button:hover{
+transform: scale(1.07);
+}
+.colorsactive{
+    position: absolute;
+    top: 7%;
+    left: 4.1rem;
+    background-color: rgb(76, 78, 76);
+    width: 14rem;
+    height: 7rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    opacity: 1;
+}
+.sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 0;
+}
+.sec1 > div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color:whitesmoke;
+    overflow: hidden;
+    box-shadow: .1rem 0rem .3rem black;
+}
+main section:first-child > div:first-child::before{
+    content: 'iphone13 pro max';
+    color: #2b4651;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+main section:first-child > div:nth-child(2)::before{
+    content: 'iphone13 pro';
+    color: #2b4651;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+main section:first-child > div:last-child::before{
+    content: 'iphone13';
+    color: #2b4651;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+.sec1 > div:nth-child(2){
+    margin: 0 4rem;
+}
+.sec1 > div img{
+    width: 22rem;
+    height: 28rem;
+    transition: all .7s ease-in-out;
+}
+.sec1 > div:hover img{
+transform: scale(1.1);
+}
+.sec1 > div span{
+font-size: 2.2rem;
+font-weight: bold;
+color: whitesmoke;
+background-color: #2b4651;
+text-align: center;
+}
+.sec1 > div p{
+    color: #2b4651;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+hr{
+    width: 80%;
+    font-weight: bold;
+    margin: 0 auto;
+}
+footer{
+    width: 100%;
+    height: 3rem;
+    background-color: #22333a;
+}
+
+@media (max-width:300px){
+    html{
+        font-size: 3.8px
+    }
+    header{
+        height: 75rem;
+    }
+}
+@media (min-width:301px) and (max-width:400px){
+    html{
+        font-size: 4.8px
+    }
+    header{
+        height: 75rem;
+    }
+}
+@media (min-width:401px) and (max-width:500px){
+    html{
+        font-size: 5.2px
+    }
+    header{
+        height: 75rem;
+    }
+}
+@media (min-width:501px) and (max-width:650px){
+    html{
+        font-size: 7px
+    }
+    header{
+        height: 75rem;
+    }
+}
+@media (min-width:650px) and (max-width:850px){
+    html{
+        font-size: 9.5px
+    }
+    header{
+        height: 75rem;
+    }
+}
+@media (min-width:850px) and (max-width:1000px){
+    html{
+        font-size: 11px
+    }
+    header{
+        height: 75rem;
+    }
+}
+@media (min-width:1000px) and (max-width:1300px){
+    html{
+        font-size: 13.4px
+    }
+}
