@@ -3,7 +3,8 @@ var bar = document.getElementById('bar'),
     colors = document.getElementById('colors'),
     image = document.getElementById('image'),
     header_bg = document.getElementById('header_bg'),
-    setting = document.getElementById('setting');
+    setting = document.getElementById('setting'),
+    bgscroll = document.getElementById('sec1');
 
 bar.onclick = function (){
     active.classList.toggle('active');
@@ -22,4 +23,11 @@ header_bg.style.backgroundColor = color;
 window.ondblclick = function(){
     active.classList.remove('active');
     colors.classList.remove('colorsactive');
+}
+window.onscroll = function (){
+
+    if(scrollY >= 350){
+    bgscroll.style.opacity = '1';
+    bgscroll.style.margin = '7rem 0rem';
+}
 }
