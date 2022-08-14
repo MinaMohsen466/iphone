@@ -26,7 +26,7 @@ window.ondblclick = function(){
 }
 window.onscroll = function (){
 
-    if(scrollY >= 350){
+    if(scrollY >= 300){
     bgscroll.style.opacity = '1';
     bgscroll.style.margin = '7rem 0rem';
 }
